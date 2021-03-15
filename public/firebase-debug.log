@@ -1,0 +1,158 @@
+[debug] [2021-03-08T00:17:15.790Z] ----------------------------------------------------------------------
+[debug] [2021-03-08T00:17:15.792Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\famduran\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-03-08T00:17:15.793Z] CLI Version:   9.2.2
+[debug] [2021-03-08T00:17:15.793Z] Platform:      win32
+[debug] [2021-03-08T00:17:15.793Z] Node Version:  v12.18.3
+[debug] [2021-03-08T00:17:15.794Z] Time:          Sun Mar 07 2021 18:17:15 GMT-0600 (GMT-06:00)
+[debug] [2021-03-08T00:17:15.795Z] ----------------------------------------------------------------------
+[debug] [2021-03-08T00:17:15.795Z] 
+[debug] [2021-03-08T00:17:15.800Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-03-08T00:17:15.835Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-08T00:17:15.836Z] > authorizing via signed-in user
+[debug] [2021-03-08T00:17:15.837Z] [iam] checking project kaanbal-2 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2021-03-08T00:17:15.839Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-08T00:17:15.839Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-08T00:17:16.130Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Mon, 08 Mar 2021 00:17:16 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:16.141Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/kaanbal-2:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2021-03-08T00:17:16.235Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-03-08T00:17:16.235Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2021-03-08T00:17:16.653Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=263","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:16.654Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/kaanbal-2/serviceAccounts/kaanbal-2@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2021-03-08T00:17:17.138Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:17 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:17.141Z] > refreshing access token with scopes: []
+[debug] [2021-03-08T00:17:17.142Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-08T00:17:17.413Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Mon, 08 Mar 2021 00:17:17 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:17.433Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kaanbal-2 [none]
+[debug] [2021-03-08T00:17:17.777Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kaanbal-2 200
+[debug] [2021-03-08T00:17:17.777Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kaanbal-2 {"projectId":"kaanbal-2","projectNumber":"928436614846","displayName":"kaanbal-2","name":"projects/kaanbal-2","resources":{"hostingSite":"kaanbal-2","realtimeDatabaseInstance":"kaanbal-2","storageBucket":"kaanbal-2.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2021-03-08T00:17:17.779Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/kaanbal-2 [none]
+[debug] [2021-03-08T00:17:18.077Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/kaanbal-2 200
+[debug] [2021-03-08T00:17:18.077Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/kaanbal-2 {"projectId":"kaanbal-2","projectNumber":"928436614846","displayName":"kaanbal-2","name":"projects/kaanbal-2","resources":{"hostingSite":"kaanbal-2","realtimeDatabaseInstance":"kaanbal-2","storageBucket":"kaanbal-2.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[warn] !  functions: package.json indicates an outdated version of firebase-functions.
+Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[info] 
+[info] === Deploying to 'kaanbal-2'...
+[info] 
+[info] i  deploying database, storage, firestore, functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] +  functions: Finished running predeploy script. 
+[info] i  database: checking rules syntax... 
+[debug] [2021-03-08T00:17:27.445Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-03-08T00:17:27.445Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-08T00:17:27.668Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 08 Mar 2021 00:17:27 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:27.688Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/kaanbal-2/locations/-/instances/kaanbal-2  
+ 
+[debug] [2021-03-08T00:17:28.192Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:28.195Z] >>> HTTP REQUEST PUT https://kaanbal-2.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2021-03-08T00:17:28.937Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Mon, 08 Mar 2021 00:17:29 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  database: rules syntax for database kaanbal-2 is valid 
+[debug] [2021-03-08T00:17:28.942Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/kaanbal-2  
+ 
+[debug] [2021-03-08T00:17:29.525Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:29 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firebase.storage: checking storage.rules for compilation errors... 
+[debug] [2021-03-08T00:17:29.534Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/kaanbal-2:test  
+ {"source":{"files":[{"name":"storage.rules","content":"service firebase.storage {\n  match /b/{bucket}/o {\n    match /{allPaths=**} {\n      allow read, write: if request.auth!=null;\n    }\n  }\n}\n"}]}}
+[debug] [2021-03-08T00:17:29.973Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  [W] undefined:undefined - Ruleset uses old version (version [1]). Please update to the latest version (version [2]). 
+[info] +  firebase.storage: rules file storage.rules compiled successfully 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2021-03-08T00:17:29.991Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/kaanbal-2:test  
+ {"source":{"files":[{"name":"firestore.rules","content":"rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n\n    // This rule allows anyone on the internet to view, edit, and delete\n    // all data in your Firestore database. It is useful for getting\n    // started, but it is configured to expire after 30 days because it\n    // leaves your app open to attackers. At that time, all client\n    // requests to your Firestore database will be denied.\n    //\n    // Make sure to write security rules for your app before that time, or else\n    // your app will lose access to your Firestore database\n    match /{document=**} {\n      allow read, write: if request.time < timestamp.date(2020, 3, 8);\n    }\n  }\n}"}]}}
+[debug] [2021-03-08T00:17:30.238Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:30 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2021-03-08T00:17:30.246Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "12"
+  },
+  "dependencies": {
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "firebase-functions-test": "^0.1.6"
+  },
+  "private": true
+}
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2021-03-08T00:17:33.461Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/kaanbal-2/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2021-03-08T00:17:33.461Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/kaanbal-2/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2021-03-08T00:17:33.462Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/kaanbal-2/services/cloudbuild.googleapis.com  
+ 
+[debug] [2021-03-08T00:17:34.006Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:34.036Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2021-03-08T00:17:34.090Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2021-03-08T00:17:34.093Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/kaanbal-2/adminSdkConfig  
+ 
+[debug] [2021-03-08T00:17:34.531Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:34 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:34.534Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/kaanbal-2/versions  
+ {"config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-03-08T00:17:35.284Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:35.289Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/kaanbal-2/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-03-08T00:17:35.666Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:35.671Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/kaanbal-2/rulesets/159304a7-4d33-4fd6-ad91-203faa81d8e7  
+ 
+[debug] [2021-03-08T00:17:35.947Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  storage: latest version of storage.rules already up to date, skipping upload... 
+[debug] [2021-03-08T00:17:35.958Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/kaanbal-2/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-03-08T00:17:35.960Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/kaanbal-2/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-03-08T00:17:36.237Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:36.238Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/kaanbal-2/rulesets/831f84f5-f82c-48cd-8602-ff5bb87fe811  
+ 
+[debug] [2021-03-08T00:17:36.420Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:36.423Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/kaanbal-2/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-03-08T00:17:36.496Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:36 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firestore: uploading rules firestore.rules... 
+[debug] [2021-03-08T00:17:36.501Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/kaanbal-2/rulesets  
+ {"source":{"files":[{"name":"firestore.rules","content":"rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n\n    // This rule allows anyone on the internet to view, edit, and delete\n    // all data in your Firestore database. It is useful for getting\n    // started, but it is configured to expire after 30 days because it\n    // leaves your app open to attackers. At that time, all client\n    // requests to your Firestore database will be denied.\n    //\n    // Make sure to write security rules for your app before that time, or else\n    // your app will lose access to your Firestore database\n    match /{document=**} {\n      allow read, write: if request.time < timestamp.date(2020, 3, 8);\n    }\n  }\n}"}]}}
+[debug] [2021-03-08T00:17:36.825Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-08T00:17:36.825Z] [rules] created ruleset projects/kaanbal-2/rulesets/d7a1d57a-694a-4dea-88c2-f90408487bc3
+[debug] [2021-03-08T00:17:36.847Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 08 Mar 2021 00:17:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firestore: The following indexes are defined in your project but are not present in your firestore indexes file:
+	(exams) -- (id_materia,ASCENDING) (descripcion,DESCENDING) 
+	(students-exams) -- (id_tema,ASCENDING) (id_usuario,ASCENDING) (fecha,ASCENDING) 
+	(students-exams) -- (id_cuestionario,ASCENDING) (id_usuario,ASCENDING) (fecha,ASCENDING) 
+	(exams) -- (id_materia,ASCENDING) (id_tema,ASCENDING) (descripcion,DESCENDING) 
+	(students-exams) -- (id_tema,ASCENDING) (nombre_cuestionario,ASCENDING) 
+	(exams) -- (id_tema,ASCENDING) (descripcion,DESCENDING) 
+	(students-exams) -- (id_materia,ASCENDING) (id_tema,ASCENDING) 
+	(exams) -- (id_materia,ASCENDING) (id_tema,ASCENDING) (descripcion,ASCENDING) 
+	(students-exams) -- (id_cuestionario,ASCENDING) (id_usuario,ASCENDING) (fecha,DESCENDING) 
+	(exams) -- (id_materia,ASCENDING) (id_tema,ASCENDING) (id_usuario,ASCENDING) (descripcion,DESCENDING) 
+	(teachers_groups) -- (id_profesor,ASCENDING) (nombre_grupo,ASCENDING) 
+	(students-exams) -- (id_usuario,ASCENDING) (fecha,ASCENDING) 
+	(teachers_groups) -- (id_profesor,ASCENDING) (nombre_grupo,DESCENDING) 
+	(exams) -- (id_tema,ASCENDING) (descripcion,ASCENDING)  
