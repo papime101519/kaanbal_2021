@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Pagina Web">
+    <meta name="author" content="PaginaWeb">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+ 
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link rel="stylesheet" href="../css/estilos_usuarios.css">
+
+    <title>Desarrollo de Aplicaciones M&oacute;viles para apoyar el aprendizaje  de la materia de &aacute;lgebra.</title>
+    
+
+  </head>
+
+<body class="is-preload" >
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+        <div id="main">
+          <div class="inner">
+            <!-- Header -->
+            <header id="header" style="margin-bottom: 40px;">
+              <div class="logo" id="titulo_cabecera" >
+                <a href="menu_inicial.html">
+                  <font id="titulo_encabezado"></font>
+                </a>
+              </div>
+            </header>
+
+
+            <!---++++++++++++++   ZONA DE TRABAJO      ++++++++++++++++++-->
+
+    <!-- ***********CUERPO EDITABLE PAGINA ********************-->
+    <div class="container">
+
+      <h3 align="center">PREGUNTA TIPO CALCULADA</h3>
+     <br>
+      <form accept="" method="">
+        
+        
+        <div class="form-group row" id="bloque_materias">
+            <label for="materias" class="col-sm-2 col-form-label">Materia</label>
+            <div class="col-sm-10">
+                <select name="materias" id="materias" style="width: 100%;"    >
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group row"  id='bloque_tema'>
+            <label for="temas" class="col-sm-2 col-form-label">Tema</label>
+            <div class="col-sm-10">
+                <select name="temas" id="temas" style="width: 100%;"    >
+                </select>
+            </div>
+        </div>
+
+        <section id='bloque_pregunta'>
+        <div class="form-group row" >
+            <label for="descripcion" class="col-sm-2 col-form-label">Descripción de la pregunta</label>
+            <div class="col-sm-10">
+              <textarea  class="form-control" id="descripcion"name="descripcion" placeholder="" required></textarea>
+            </div>
+        </div>
+
+        <div class="form-group row" >
+          <label for="sugerencias" class="col-sm-2 col-form-label">Sugerencias</label>
+          <div class="col-sm-10">
+            <textarea  class="form-control" id="sugerencias" name="sugerencias" placeholder="" required></textarea>
+          </div>
+      </div>
+
+        <div class="form-group row">
+            <label for="URLimagen" class="col-sm-2 col-form-label">URL imagen</label>
+            <div class="col-sm-10">
+              <input type="file" class="form-control" id="URLimagen" name="URLimagen" placeholder="" >
+            </div>
+          </div>        
+          
+
+
+          <div class="form-group row">
+            <label for="URLvideo" class="col-sm-2 col-form-label">Video tutorial</label>
+            <div class="col-sm-10">
+              <input type="file" class="form-control" id="URLvideo" name="URLvideo" placeholder="" >
+            </div>
+          </div>
+
+
+
+          <div class="form-group row">
+            <label for="respuesta" class="col-sm-2 col-form-label">Respuesta numérica</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="respuesta" name="respuesta" placeholder="" required>
+            </div>
+          </div>
+
+
+            <input type="hidden" id="tipo_pregunta" value='1'>  
+            <div class="form-group row">
+
+              <div class="col-sm-1"> 
+              </div>
+              <div class="col-sm-5">
+                <button type="submit" class="btn btn-primary form-control"  id="regresar" name="regresar">Regresar </button>
+              </div>
+              <div class="col-sm-5">
+                <button type="submit" class="btn btn-primary form-control"  id="enviar" name="enviar">Salvar </button>
+              </div>
+              <div class="col-sm-1"> 
+              </div>
+            </div>
+
+           
+        </section>
+          
+        </form>
+
+       
+    </div>
+    <!--********************************************************-->
+
+
+            <!---++++++++++++++   FIN ZONA DE TRABAJO      +++++++++++++++-->
+            
+
+           
+
+
+          </div>
+        </div>
+
+      <!-- Sidebar -->
+        <div id="sidebar">
+          <img alig='center' src="../img/logo2.png" width="100px"> 
+
+          <div class="inner">
+
+            
+              
+            <!-- Menu -->
+            <nav id="menu">
+               
+              <ul>
+                <li><a href="menu_inicial.html">Inicio</a></li>
+                <li>
+                  <span class="opener">Alumnos</span>
+                  <ul id="cargar_menu_alumnos"></ul>
+                </li>
+
+                <li>
+                  <span class="opener">Profesores</span>
+                  <ul id="cargar_menu_profesores"></ul>
+                </li>
+                
+                <li>
+                  <span class="opener">Materias</span>
+                  <ul id="cargar_menu_materias"></ul>
+                </li>
+
+                <li>
+                  <span class="opener">Preguntas</span>
+                  <ul id="cargar_menu_preguntas"></ul>
+                </li>
+
+                
+                <li>
+                  <span class="opener">Cuestionarios</span>
+                  <ul id="cargar_menu_cuestionarios"></ul>
+                </li>
+
+
+
+                <li><button type="button" class="btn btn-dark text-center"  onclick="salir_sistema();">Salir del sistema</button></li>
+              </ul>
+            </nav>
+
+
+
+            <!-- Footer -->
+            <footer id="footer">
+              <p class="copyright">Copyright &copy; 2021 KAANBAL
+              
+            </footer>
+
+          </div>
+        </div>
+
+    </div>
+
+
+    
+  <section id="zona_scripts">
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+      <script src="../vendor/jquery/jquery.min.js"></script>
+      <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+      <script src="../assets/js/browser.min.js"></script>
+      <script src="../assets/js/breakpoints.min.js"></script>
+      <script src="../assets/js/transition.js"></script>
+      <script src="../assets/js/owl-carousel.js"></script>
+      <script src="../assets/js/custom.js"></script>
+  
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+  
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+  
+  
+  <!-- SE AGREGO COMO UNA LIBRERIA EXTRA,PORQUE NO ESTA CARGADA INICIALMENTE  -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.1//firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.1//firebase.js"></script>
+  
+  
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-storage.js"></script>
+  
+  <script src="JS/configuracion_firebase.js" ></script>
+  <script src="JS/App_manejo_sesiones.js" ></script>
+  <script src="JS/App_configurando_menus.js" ></script>
+  <script src="JS/App_funciones_materias_temas.js" ></script>
+  <script src="JS/App_agregar_preguntas_calculada.js" ></script>
+
+  </section>
+
+</body>
+
+</html>

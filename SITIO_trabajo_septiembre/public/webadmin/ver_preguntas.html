@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Pagina Web">
+    <meta name="author" content="PaginaWeb">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+ 
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link rel="stylesheet" href="../css/estilos_usuarios.css">
+
+
+    <title>Desarrollo de Aplicaciones M&oacute;viles para apoyar el aprendizaje  de la materia de &aacute;lgebra.</title>
+    
+
+  </head>
+
+<body class="is-preload" >
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+        <div id="main">
+          <div class="inner">
+
+            <!-- Header -->
+            <header id="header" style="margin-bottom: 40px;">
+              <div class="logo" id="titulo_cabecera" >
+                <a href="menu_inicial.html">
+                  <font id="titulo_encabezado"></font>
+                </a>
+              </div>
+            </header>
+
+
+            <!---++++++++++++++   ZONA DE TRABAJO      ++++++++++++++++++-->
+
+            <!-- Tables -->
+            <section class="tables" style=" padding-top: 5px; margin-top: 30px;   ">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="section-heading" >
+                      <h2>Listado de preguntas por tema</h2>
+                    </div>
+                    <div class="mostrarListadoMaterias" id="mostrarListadoMaterias">
+                             <form id="form1" action="" method="post">                     
+                                 <select name="listado_materias" id="listado_materias" style="width: 500px;"> </select>
+                             </form>
+                    </div>
+                    <br />
+                    <div class="mostrarListadoTemas" id="mostrarListadoTemas">
+                        <form id="form1" action="" method="post">                     
+                              <select name="listado_temas" id="listado_temas" style="width: 500px;"> </select>
+                         </form>
+                    </div>
+                    <div>
+                      <table id="listado_preguntas"><tr><th>Preguntas</th></tr><tbody></tbody></table>
+                    </div>
+
+                  </div>    
+
+                     
+                      <div class="mostrarDatosPregunta" id="mostrarDatosPregunta">   
+                        <br/>
+                          <form id="datos_preguntas" action="" method="post">
+                              <!--<fieldset>-->
+                                  <!--<caption>Profesor</caption>
+                                  <input id="alumno" name="alumno" type="text" class="form-control"  placeholder="Nombre del profesor" required="" style="width: 520px;">
+                                  <caption>email</caption>
+                                  <input  id="correo" name="correo" type="text" class="form-control"   placeholder="correo del profesor" required="" style="width: 520px;">
+                                  <caption>Mensaje</caption>
+                                  <input  id="mensaje" name="mensaje" type="text" class="form-control"   placeholder="Mensaje" required="" style="width: 520px;">
+                                   <br />
+                                  <div class="col-md-12">
+                                    <button type="submit" id="salvar" class="button">Salvar datos</button>
+                                  </div>-->
+                                  <!--</fieldset>-->
+                          </form>
+                      </div>
+                        
+
+
+
+
+                    
+
+            </section>
+
+         
+
+            <!---++++++++++++++   FIN ZONA DE TRABAJO      +++++++++++++++-->
+            
+
+           
+
+
+          </div>
+        </div>
+
+      <!-- Sidebar -->
+        <div id="sidebar">
+          <img alig='center' src="img/logo2.png" width="100px"> 
+
+          <div class="inner">
+
+            
+              
+            <!-- Menu -->
+            <nav id="menu">
+               
+              <ul>
+                <li><a href="menu_inicial.html">Inicio</a></li>
+                <li>
+                  <span class="opener">Alumnos</span>
+                  <ul id="cargar_menu_alumnos"></ul>
+                </li>
+
+                <li>
+                  <span class="opener">Profesores</span>
+                  <ul id="cargar_menu_profesores"></ul>
+                </li>
+                
+                <li>
+                  <span class="opener">Materias</span>
+                  <ul id="cargar_menu_materias"></ul>
+                </li>
+
+                <li>
+                  <span class="opener">Preguntas</span>
+                  <ul id="cargar_menu_preguntas"></ul>
+                </li>
+
+                
+                <li>
+                  <span class="opener">Cuestionarios</span>
+                  <ul id="cargar_menu_cuestionarios"></ul>
+                </li>
+
+
+
+                <li><button type="button" class="btn btn-dark text-center"  onclick="salir_sistema();">Salir del sistema</button></li>
+              </ul>
+            </nav>
+
+
+
+            <!-- Footer -->
+            <footer id="footer">
+              <p class="copyright">Copyright &copy; 2021 KAANBAL
+              
+            </footer>
+
+          </div>
+        </div>
+
+    </div>
+
+
+  <section id="zona_scripts">
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/transition.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+
+<!-- SE AGREGO COMO UNA LIBRERIA EXTRA,PORQUE NO ESTA CARGADA INICIALMENTE  -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1//firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1//firebase.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+
+
+<script src="JS/configuracion_firebase.js" ></script>
+<script src="JS/App_manejo_sesiones.js" ></script>
+<script src="JS/App_preguntas_listado.js" ></script>
+  </section>
+
+</body>
+
+</html>

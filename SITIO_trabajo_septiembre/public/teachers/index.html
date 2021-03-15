@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilo_entrada.css" >
+    <title>SISTEMA KAANBAL</title>
+  </head>
+  <body>
+
+        
+
+    <div class="row align-content-center text-center px-0 px-sm-1" style="min-width: 250px;">
+                
+      <div class="col-12">
+        <h1 class="text-center d-none d-sm-none d-md-block"> <img alig='center' src="../img/logo.png" width="100px">  Benvenidos</h1>
+        <h2 class="text-center d-block d-sm-block d-md-none "> <img alig='center' src="../img/logo.png" width="100px">  Benvenidos</h2>
+       
+      
+        </div>
+                <div class="col-12">
+                    <form name="formulario1">
+                        <div class="form-group2">
+                            <div class="col-12 text-center p-3" id="botones1" name="botones1" text-center p-4">
+            
+                              <button type="button" id='login' name='login'class="btn btn-primary">Entrar al sistema</button>
+                              <!--<button type="button" id='crear' name='crear' class="btn btn-primary"  >Crear cuenta </button>-->
+                            </div>    
+                        </div>
+                    </form>
+                      <center>
+                      <h6>Para acceder al sistema debe contar con una cuenta de correo google (Ej: usuario@gmail.com)</h6>
+                      </center>
+                    </div> 
+                    
+            </div> 
+        </div>
+      
+<!-- ****************** ventana modal   ***************** -->
+ 
+  <style>
+      .modal-dialog{
+      max-width: 60%;
+  }
+  </style>
+  
+  <div class="modal" tabindex="-1" role="dialog" id="mostrarmodal">
+  <div class="modal-dialog">
+  <div class="modal-content">
+  <div class="modal-header">
+  <h5 class="modal-title">AVISO</h5>
+  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+  <span aria-hidden="true">&times;</span>
+  </button>
+  </div>
+  <div class="modal-body">
+  <!--****** contenido del modal-->
+  <h6>
+  <span id="aviso_agregar"></span>
+  </h6>
+  <!-- Fin del contenido del modal-->
+  
+  </div>
+  <div class="modal-footer">
+  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar ventana</button>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  <!-- ****************** fin de ventana modal *************  -->
+  
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+
+<!-- SE AGREGO COMO UNA LIBRERIA EXTRA,PORQUE NO ESTA CARGADA INICIALMENTE  -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1//firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1//firebase.js"></script>
+
+
+
+<script src="JS/configuracion_firebase.js" ></script>
+<script src="JS/App_entrada_sistema_teachers.js" ></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+$(document).ready(function()
+{
+	$("#boton").click(function(){
+        $.post("datos_externos.html", {coche: "Ford", modelo: "Focus", color: "rojo"}, function(htmlexterno){
+            $("#cargaexterna").html(htmlexterno);
+    	});
+	});
+});
+</script>
+<body>
+
+   
+<input type="button" id="boton" value="Cargar HTML externo">
+<div id="cargaexterna">Aquí se cargará el HTML externo</div>
+
+</body>
+</html>

@@ -1,0 +1,44 @@
+
+    html {
+    background: url('../img/mate2.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #000;
+
+    }
+
+    body {
+        padding-top: 60px;
+        background: transparent;
+        font-size: 1.6em;
+    }
+
+            
+    div.row {
+        background-color: rgba(255, 255, 255, 0.87);
+        border-radius: 30px;
+        padding: 50px;
+        margin: 50px;
+            }
+
+    img {
+        max-width: 100%;
+    }
+
+
+    body2{
+      background-color:384289;
+      background-color: black ;
+  
+  
+      background-image: url("img/mate2.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: auto;
+      /*opacity: 0.5; */
+      /* background: rgba(46, 51, 56, 0.2)!important; */
+  
+    }
+  

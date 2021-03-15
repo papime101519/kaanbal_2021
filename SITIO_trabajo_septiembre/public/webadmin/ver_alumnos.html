@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Pagina Web">
+    <meta name="author" content="PaginaWeb">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+ 
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css">
+    <link rel="stylesheet" href="../assets/css/owl.css">
+    <link rel="stylesheet" href="../css/estilos_usuarios.css">
+
+
+    <title>Desarrollo de Aplicaciones M&oacute;viles para apoyar el aprendizaje  de la materia de &aacute;lgebra.</title>
+    
+
+  </head>
+
+<body class="is-preload" >
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+      <!-- Main -->
+        <div id="main">
+          <div class="inner">
+
+            <!-- Header -->
+            <header id="header" style="margin-bottom: 40px;">
+              <div class="logo" id="titulo_cabecera" >
+                <a href="menu_inicial.html">
+                  <font id="titulo_encabezado"></font>
+                </a>
+              </div>
+            </header>
+
+
+            <!---++++++++++++++   ZONA DE TRABAJO      ++++++++++++++++++-->
+
+   <!-- Tables -->
+   <section class="tables" style=" padding-top: 5px; margin-top: 30px;" id="lista_alumnos">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading" >
+            <h2>Alumnos En el sistema</h2>
+          </div>
+          <div class="default-table" style=" padding-top: 0px;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Correo</th>
+                  <th></th>
+                  <th></th>
+                 
+                </tr>
+              </thead>
+              <tbody id='datos_alumnos'>   </tbody>
+            </table>
+            <!--
+            <ul class="table-pagination">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">1</a></li>
+              <li class="active"><a href="#">2</a></li>
+              <li><a href="#">...</a></li>
+              <li><a href="#">8</a></li>
+              <li><a href="#">9</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </div>
+        -->
+
+  </section>
+
+
+            <!---++++++++++++++   FIN ZONA DE TRABAJO      +++++++++++++++-->
+            
+
+           
+
+
+          </div>
+        </div>
+
+      <!-- Sidebar -->
+        <div id="sidebar">
+          <img alig='center' src="../img/logo2.png" width="100px"> 
+
+          <div class="inner">
+
+            
+              
+            <!-- Menu -->
+            <nav id="menu">
+               
+              <ul>
+                <li><a href="menu_inicial.html">Inicio</a></li>
+                <li>
+                  <span class="opener">Alumnos</span>
+                  <ul id="cargar_menu_alumnos"></ul>
+                </li>
+
+                <li>
+                  <span class="opener">Profesores</span>
+                  <ul id="cargar_menu_profesores"></ul>
+                </li>
+                
+                <li>
+                  <span class="opener">Materias</span>
+                  <ul id="cargar_menu_materias"></ul>
+                </li>
+
+                <li>
+                  <span class="opener">Preguntas</span>
+                  <ul id="cargar_menu_preguntas"></ul>
+                </li>
+
+                
+                <li>
+                  <span class="opener">Cuestionarios</span>
+                  <ul id="cargar_menu_cuestionarios"></ul>
+                </li>
+
+
+
+
+                <li><button type="button" class="btn btn-dark text-center"  onclick="salir_sistema();">Salir del sistema</button></li>
+              </ul>
+            </nav>
+
+
+
+            <!-- Footer -->
+            <footer id="footer">
+              <p class="copyright">Copyright &copy; 2021 KAANBAL
+              
+            </footer>
+
+          </div>
+        </div>
+
+    </div>
+
+
+    <div class="modal" tabindex="-1" id="modificar_alumnos"   >
+      <div class="modal-dialog" >
+        <div class="modal-content" style="width: 550px;">
+          <div class="modal-header">
+            <h5 class="modal-title">Modificar Alumnos</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="mostrarDatosAlumnos" id="mostrarDatosAlumnos">   
+              <br/>
+                <form id="datos_alumnos" action="" method="post">
+                    <!--<fieldset>-->
+                        <caption>Alumno</caption>
+                        <input id="nombre2" name="nombre2" type="text" class="form-control"  placeholder="Nombre del alumno" required="" style="width: 520px;">
+                        <caption>email</caption>
+                        <input  id="email2" name="email2" type="text" class="form-control"   placeholder="correo del alumno" required="" style="width: 520px;">
+                        <caption>Mensaje</caption>
+                        <input  id="mensaje2" name="mensaje2" type="text" class="form-control"   placeholder="Mensaje" required="" style="width: 520px;">
+                         <br />
+                         <input type="hidden" id="clave_alumno2" name="clave_alumno2">
+                        <div class="col-md-12">
+                          <button type="submit" id="actualizar"  class="button" data-dismiss="modal"  >Salvar datos</button>
+                        </div>
+                        <!--</fieldset>-->
+                </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <!--<button type="button" class="btn btn-primary">Salvar cambios</button>-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal" tabindex="-1" id="borrar_alumnos">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Borrar Alumno</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Esta seguro de borrar el registro</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary" id="eliminar">Borrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <section id="zona_scripts">
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../assets/js/browser.min.js"></script>
+    <script src="../assets/js/breakpoints.min.js"></script>
+    <script src="../assets/js/transition.js"></script>
+    <script src="../assets/js/owl-carousel.js"></script>
+    <script src="../assets/js/custom.js"></script>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-analytics.js"></script>
+
+
+<!-- SE AGREGO COMO UNA LIBRERIA EXTRA,PORQUE NO ESTA CARGADA INICIALMENTE  -->
+<script src="https://www.gstatic.com/firebasejs/7.8.1//firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.8.1//firebase.js"></script>
+
+
+<script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+
+
+<script src="JS/configuracion_firebase.js" ></script>
+<script src="JS/App_manejo_sesiones.js" ></script>
+<script src="JS/App_configurando_menus.js" ></script>
+<script src="JS/App_students_listado.js" ></script>
+
+  </section>
+
+</body>
+
+</html>
